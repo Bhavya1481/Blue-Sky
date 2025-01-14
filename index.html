@@ -3,59 +3,53 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Sky</title>
+    <title>StackOverflow Clone</title>
     <link rel="stylesheet" href="styles.css">
     </head>
     <body>
     <header>
         <div class="container">
-        <h1>Blue Sky</h1>
+        <h1>StackOverflow Clone</h1>
         </div>
     </header>
     <main class="container">
-
-        <!-- search-bar -->
-
-            <section id="search-bar">
-            <input type="text" id="search-input" placeholder="Search by title or tag...">
-            </section>
-
-        <!-- question-form -->
-
+        <section id="search-bar">
+        <input type="text" id="search-input" placeholder="Search by title or tag...">
+        </section>
+        
         <section id="question-form">
         <h2>Ask a Question</h2>
         <div class="form-group">
             <label for="question-title">Title</label>
             <input type="text" id="question-title" placeholder="Enter your question title" required>
         </div>
-
-        <!-- form the groups with the following labels and input fields: -->
-
         <div class="form-group">
             <label for="question-description">Description</label>
             <textarea id="question-description" placeholder="Describe your question..." required></textarea>
         </div>
-        <button id="submit-question" class="btn">Submit Question</button>
-        </section>
-
         <div class="form-group">
             <label for="tags">Tags (Press Enter to Add)</label>
             <input type="text" id="tags" placeholder="Enter tags (e.g., JavaScript, React)" />
             <div id="tags-container"></div>
         </div>
+        <button id="submit-question" class="btn">Submit Question</button>
+        </section>
 
-        <!-- question-list -->
 
+        <div class="search-container">
+            <input type="text" placeholder="Search the app..." class="search-input" />
+            <button class="shortcut-button">⌘ K</button>
+        </div>
+        
+        
         <section id="question-list">
         <h2>Questions</h2>
         <ul id="questions"></ul>
         </section>
     </main>
-
-    <!-- footer -->
-
+    
     <footer>
-        <p>&copy; Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under CC BY-SA . rev 2025.1.7.20851</p>
+        <p>&copy; 2025 StackOverflow Clone. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
     </body>
